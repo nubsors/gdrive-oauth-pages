@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone Google Drive Access</title>
+<style>
+  :root { color-scheme: dark light; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 44rem; margin: 4rem auto; padding: 0 1.25rem; line-height: 1.65; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { color: #8b8b8b; margin-top: 0; }
+  code { background: rgba(127,127,127,.18); padding: .15em .4em; border-radius: 4px; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3);
+           font-size: .875rem; color: #8b8b8b; }
+</style>
+</head>
+<body>
+  <h1>rclone Google Drive Access</h1>
+  <p class="sub">Private, single-user OAuth application</p>
+
+  <p>This application exists solely to let its owner connect the
+  <a href="https://rclone.org/">rclone</a> file-transfer tool to <strong>their own</strong>
+  Google Drive account over the Google Drive API.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Authenticates a single user to their own Google Drive.</li>
+    <li>Mounts, lists, uploads, and downloads files within that account.</li>
+    <li>Runs locally on the owner's own machine. There is no server and no third party.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not serve any other users, and it has no public sign-up.</li>
+    <li>It does not collect, transmit, or store data belonging to anyone else.</li>
+    <li>It does not share data with any third party.</li>
+  </ul>
+
+  <p>The only scope requested is <code>https://www.googleapis.com/auth/drive</code>, used
+  exclusively against the owner's own account.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> ·
+    Contact: <a href="https://github.com/nubsors">github.com/nubsors</a>
+  </footer>
+</body>
+</html>
